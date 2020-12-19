@@ -35,10 +35,6 @@ app.post("/api/notes", function(req, res) {
 app.delete("/api/notes/:id", function(req, res){
  var data = fs.readFileSync('db/db.json')
  data = JSON.parse(data)
- for (i = 0; i < id; i++){
-   
- }
-
  fs.writeFileSync('db/db.json', JSON.stringify(data))
  res.end()
 });
